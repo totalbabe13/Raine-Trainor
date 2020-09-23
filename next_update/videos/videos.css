@@ -56,6 +56,7 @@ body  {
         height: 80%;
         margin: 10% 0 0 0;
         overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         display: grid;
         grid-template-rows: 100%;
         grid-template-columns: 15% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 
