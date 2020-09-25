@@ -1,0 +1,41 @@
+@font-face {
+    src: url(../fonts/frank/FrankfurterChrD/FrankfurterChrD.ttf);
+    font-family: frank;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: rgb(2,2,251);
+    background: linear-gradient(68deg, rgba(2,2,251,0.15) 0%, rgba(252,0,0,0.15028018043154767) 50%, rgba(255,250,0,0.15) 100%);
+    overflow: hidden;
+    border: 1px solid;
+}
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:320px) {
+    .plants {
+        height: 91%;
+        display: block;
+        margin: 0 auto;
+        filter: drop-shadow(-15px 14px 12px black);
+    }
+    .text-grid {
+        position: relative;
+        top: -91%;
+        border: 1px solid coral;
+        width: 100%;
+        height: 100%;
+        display: grid;
+    }
+    header {
+        font-size: 48pt;
+        font-family: frank;
+        text-align: center;
+        color: #fff;
+        filter: drop-shadow( 0px 0px 2px #08f900);
+    }
+}
