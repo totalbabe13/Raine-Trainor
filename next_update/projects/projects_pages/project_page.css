@@ -1,0 +1,146 @@
+@font-face {
+    src: url(../../../fonts/frank/FrankfurterChrD/FrankfurterChrD.ttf);
+    font-family: frank;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:320px) {
+    /* NAVIGATION LINKS */
+    .nav-text { 
+        font-family: frank;
+        font-size: 30pt;
+        display: block;
+        filter: drop-shadow(-2px 2px 1px #a3ff00);
+        color: #008217;
+    }
+    .nav-grid {
+        position: fixed;
+        bottom: 0em;
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav {
+        width: 100%;
+        align-self: end;
+        text-decoration: none;
+        filter: drop-shadow(0 0px 3px lime);
+    }
+    .art-link {
+        margin-left: 1em;
+    }
+    .home-link {
+        text-align: right;
+        margin-left: -1em;
+    }
+    /* NAV END */
+
+    /* Template Styles  */
+    header {
+        height: 10%;
+        font-family: frank;
+        font-size: 2em;
+        text-align: center;
+    }
+    .scroller-container {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: min-content;
+        grid-gap: 0.5em;
+        /* align-items: center; */
+        /* border: 3px solid chartreuse; */
+    }
+    .text-container {
+        height: 100vh;
+        width: 85vw;
+        overflow-y: scroll;
+    }
+    .project-text {
+        font-size: 12pt;
+        font-family: helvetica;
+        padding: 0.5em 0.5em 0.5em 1.5em;
+    }
+    .project-text.title {
+        margin: 1em auto;
+        font-size: 13pt;
+    }
+    .project-text.title:hover {
+        background-color:black;
+        color: white;
+    }
+    a.link {
+        text-decoration: none;
+        filter: none;
+        color: blue;
+        filter: drop-shadow(0 0 0 black);
+    }
+    .project-text.link:hover {
+        background-color: blue;
+        color: white;
+    }
+    a.link:visited {
+        color:#7373ce;
+    }
+    .text-spacer {
+        height: 50%;
+    }   
+    .project-img {
+        width: 85vw;
+        align-self: center;
+    }
+    .dead-img {
+        width: 10em;
+        height: 10em;
+        /* border: 2px solid blue; */
+    }
+}
+@media screen and (min-width:568px) { 
+    .scroller-container {
+        margin: 0;
+        grid-auto-columns: min-content;
+    }
+    .text-container {
+        width: 30em;
+    }
+    .project-img {
+        width: unset;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width:700px) { 
+    .nav-text {
+        font-size: 42pt;
+    }
+    .project-text {
+        font-size: 15pt;
+    }
+    .project-text.title {
+        font-size: 16pt;
+    }
+    .scroller-container {
+        grid-gap: 2em;
+    }
+}
+
+@media screen and (min-width:900px) { 
+    .nav-text {
+        font-size: 57pt;
+    }
+}
+
+@media screen and (min-width:1100px) { 
+    .nav-text {
+        font-size: 70pt;
+    }
+}

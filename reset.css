@@ -37,21 +37,6 @@ table {
     height: 800px;
     border: 22px solid chartreuse;
 }
-p {
 
-}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* BREAK POINTS */
-@media (min-width: 319px) {}
 
-/*
-@media (min-width: - -px) {}
-
-@media (min-width: - -px) {}
-
-@media (min-width: - -px) {}
-
-@media (min-width: - -px) {}
-
-@media (min-width: - -px) {}
-*/

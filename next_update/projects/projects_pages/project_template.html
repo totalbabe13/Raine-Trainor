@@ -1,0 +1,162 @@
+
+    <!-- 
+    Hi Raine! You made it here! YAY!  
+    Here is a Cheat Sheet for you to refrence,
+    At the bottom of this document there is the template you can copy and paste into your new project page.
+    You dont need to change, type or edit anything at all in this doc.
+
+    Also all of the text you see that is GREEN (like this text): 
+    - Is baisically invisible to the browser
+    - It serves as a comment function. 
+    - You can leave yourself notes if you need to remember anything.
+    - You can also delete or add comment code and it wont affect how your page functions at all.
+    - You can make comments like this: -->
+
+    <!-- Hello Raine I am a comment, NOTE that I'm inside these dashed litte arrows -->
+    
+
+    <!--
+    - - - - - - - - - - -     
+    How to add a project CHEAT SHEET 💕 <3
+    + + +
+    ADDING IMAGES:
+    REMINDER:    
+    If you are adding images, they should already be:
+    - Named properly (numbered in order and NO CAPS or SPACES, using the _ as spaces)
+    - Sized Properly (no image should bemore than a 1MB, honestly, it'll take a longer time to load)
+    - Uploaded to where they are supposed to be (Double check to make sure eveything is placed correctly)
+    STEPS:
+    1. In the EXAMPLE code line below (<img> ...): look for the src="".
+    2. Type in your file name inside the quotation marks. 
+    3. Include the .jpg extentions(or what ever type of file you are using, lets say maybe its a .gif or .png). 
+    4. in the alt="..." part of the code add a small note about what the image is (not super important),
+    *** BUT, if your images do appear for some reason, this text will appear FYI
+    
+    EXAMPLE list of images added: 
+    <img class="project-img" src="1_example_file_name.jpg"          alt="text context for the visually impared">
+    <img class="project-img" src="2_type_your_file_name_here.jpg"  alt="title of work and year maybe">
+    <img class="project-img" src="3_one_more.jpg" alt="picture of apple ... not super important">
+    - - - - - - - - - - - 
+
+    ADDING TEXT: 
+    STEPS:
+    1. To add text to your page:
+    *** Your text must always go inside of this text-container. 
+    like this:    
+    <div class="text-container">
+        //INSERT TEXT STUFF IN HERE//
+        <div class="text-spacer"></div>
+    </div> 
+
+    2. Text elements for you to use:
+    *TITLE: 
+    <p class="project-text title">TYPE TITLE HERE</p>
+    
+    *LINKS:
+    <a href="TYPE URL HERE" target="blank">
+        <p class="project-text link">TEXT you will SEE/CLICK</p>
+    </a>
+
+    *TEXT BLOCK:
+    <p class="project-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Adipisci veritatis optio cumque, inventore sequi pariatur 
+        mollitia corrupti tempora facilis aliquam dolorum iure 
+        labore quae minima voluptates ducimus alias. A, iure.
+    </p> 
+
+    - need extra space between text elememnts?
+    *ADD LINE:
+    <br>
+
+    *** NOTES from Leo ***
+    - You can configure these elements in any order you want.
+    You could have images first and text last,
+    or Images, then text, then Images etc.
+    
+    -You can have more than one text container.
+    (Think of the text container as a image slide you can add or remove in an image carousel)
+
+    - *** IMPORTANT ***
+    You'll notice something in the code below that looks like this:
+        <div class="scroller-container">
+    Everything you add, wether its text or image, MUST GO INSIDE of the scoller container
+
+    
+    Example Below: 
+    You can copy paste everything below into you new project html Page :)
+    HERE IS YOUR TEMPLATE 💕
+-->    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../reset.css">
+    <link rel="stylesheet" href="project_page.css">
+    <!-- 
+    The <title></title> below is where the name of your project 
+    shows up on the tab of your browser. Its important for search engines.
+    -->
+    <title> The name of your project goes HERE</title>
+</head>
+<body>
+    <!--*** IMPORTANT *** ALL TEXT AND IMAGES MUST GO INSIDE THIS scroller-container -->
+    <div class="scroller-container">
+        <!-- EXAMPLE START OF A TEXT CONTAINER -->
+        <div class="text-container">
+            <!-- PROJECT TITLE EXAMPLE -->
+            <p class="project-text title">Project Title / 2019 / Gallery Name?</p>
+            <!-- PROJECT LINK EXAMPLE -->
+            <a href="https://youtu.be/3y1G3DntX1w" target="blank">
+                <p class="project-text link">This is a Youtube Link, you can edit/ change this text</p>
+            </a>
+            <!--Another PROJECT LINK EXAMPLE (as a PDF) -->
+            <a href="../some_folder/a_pdf_file.pdf" target="blank">
+            <p class="project-text link">This link could also go to a PDF file!</p>
+            </a>
+            <!-- PROJECT TEXT BLOCK EXAMPLE -->
+            <p class="project-text"> THIS IS AN EXAMPLE TEXT ....Evelyn Ansel, Bobby Anspach, Daniel Armitano, 
+                Jon Campolo, Kyla Chevrier, Peter Coffin, Roslyn Fok, 
+                Laura Serejo Genes, Agusta Gudmondsottir, Hugh Hayden, 
+                Leah Hennessy & Emily Allen, Riley Hooker, Miles Huston, Stacy Leigh, 
+                Raphael Lyon, Manuel Mathieu, Shawn Maximo, David McQueen, 
+                F-Architecture, Fidel Morf & Nicolas Shaltegger, Brenna Murphy, 
+                Ben Mendelwicz, Jenna Rosenberg, John Elio Reitman, Isabelle Simpson, 
+                Kristin Walsh, Ethan Bond Watts, Sarah Zapata
+            </p>
+            <!-- PROJECT ADD LINE -->
+            <br>
+            <!-- TEXT-SPACER -->
+            <!-- don't touch, but always include in text-container at the very end -->
+            <div class="text-spacer"></div>
+        </div>
+        <!-- EXAMPLE END OF A TEXT CONTAINER -->  
+         
+        <!-- EXAMPLE OF SOME IMAGES ADDED -->
+        <!-- Images Added -->
+        <img class="project-img" src="1_file_name.jpg" alt="add text context here for the visually impared">
+        <img class="project-img" src="2_file_name.jpg" alt="text context for the visually impared">
+        <img class="project-img" src="3_file_name.jpg" alt="text context for the visually impared">
+        <img class="project-img" src="4_file_name.jpg" alt="text context for the visually impared">
+        <img class="project-img" src="5_file_name.jpg" alt="text context for the visually impared">
+         <!--END OF EXAMPLE OF SOME IMAGES ADDED -->
+        
+        <!-- DEAD-IMG  -->
+        <!-- ** don't touch, but ALWAYS include in scroller-container at the very end -->
+        <div class="dead-img"></div>
+    </div>
+
+    <!-- Navigation HOME / back to PROJECTS -->
+    <div class="nav-grid">
+        <a class="art-link nav" href="../projects.html">
+            <p class="art-text nav-text">Projects</p>
+        </a>
+        <a class="home-link nav" href="../index_update.html">
+            <p class="home-text nav-text">Home</p>
+        </a>
+    </div>
+    <!-- -END- Navigation Home / back to Art -->
+</body>
+</html>
