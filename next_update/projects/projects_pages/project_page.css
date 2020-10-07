@@ -98,6 +98,9 @@ body, html {
         width: 85vw;
         align-self: center;
     }
+    iframe {
+        height: 95vh;
+    }
     .dead-img {
         width: 10em;
         height: 10em;
