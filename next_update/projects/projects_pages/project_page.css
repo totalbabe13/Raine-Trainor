@@ -78,7 +78,7 @@ body, html {
         background-color:black;
         color: white;
     }
-    a.link {
+    .project-link {
         text-decoration: none;
         filter: none;
         color: blue;
@@ -88,8 +88,8 @@ body, html {
         background-color: blue;
         color: white;
     }
-    a.link:visited {
-        color:#7373ce;
+    .project-link:visited {
+        color:blue;
     }
     .text-spacer {
         height: 50%;
