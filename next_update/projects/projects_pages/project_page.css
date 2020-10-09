@@ -96,7 +96,14 @@ body, html {
     }   
     .project-img {
         width: 85vw;
-        align-self: center;
+        /* align-self: center; */
+        margin-top: 5vh;
+    }
+    .captioned-image-wrapper {
+        display: grid; 
+        /* height: 100vh; */
+        height: fit-content;
+
     }
     iframe {
         height: 95vh;
