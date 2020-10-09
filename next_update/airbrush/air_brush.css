@@ -5,6 +5,11 @@
 body, html {
     height: 100%;
     width: 100%;
+    background: url(IMG_5156.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -18,6 +23,7 @@ body, html {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         filter: drop-shadow(2px 4px 6px #3800ff);
+        display: none;
     }
     .nav-text { 
         font-family: frank;
