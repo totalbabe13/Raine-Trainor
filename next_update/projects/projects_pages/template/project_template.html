@@ -2,69 +2,109 @@
     <!-- 
     Hi Raine! You made it here! YAY!  
     Here is a Cheat Sheet for you to refrence,
-    At the bottom of this document there is the template you can copy and paste into your new project page.
+    At the bottom of this document there is the template you can copy and paste whenever you are creating
+    a new project page.
+    It LOOKS like a lot, but its not
     You dont need to change, type or edit anything at all in this doc.
 
-    Also all of the text you see that is GREEN (like this text): 
-    - Is baisically invisible to the browser
-    - It serves as a comment function. 
+    Also all of the text you see that is THIS COLOR: 
+    - It serves as a COMMENT function.
+    - Is baisically INVISIBLE to the browser 
     - You can leave yourself notes if you need to remember anything.
     - You can also delete or add comment code and it wont affect how your page functions at all.
     - You can make comments like this: -->
 
     <!-- Hello Raine I am a comment, NOTE that I'm inside these dashed litte arrows -->
-    
+         I am not a comment! OH SNAP!
 
     <!--
     - - - - - - - - - - -     
-    How to add a project CHEAT SHEET 💕 <3
+    Add a project CHEAT SHEET HEAT 💕(So LIT!)
     + + +
+
     ADDING IMAGES:
+
     REMINDER:    
     If you are adding images, they should already be:
-    - Named properly (numbered in order and NO CAPS or SPACES, using the _ as spaces)
+    - Named properly (numbered in order and NO CAPS, SPACES, DASHES or SPECIAL CHARACTES, using the _ as spaces)
     - Sized Properly (no image should bemore than a 1MB, honestly, it'll take a longer time to load)
     - Uploaded to where they are supposed to be (Double check to make sure eveything is placed correctly)
+
+
     STEPS:
-    1. In the EXAMPLE code line below (<img> ...): look for the src="".
+    1. In the EXAMPLE code line below (<img> ...): look for this: src="" 
+    (where it says 1_FILE_NAME.jpg)
+    
     2. Type in your file name inside the quotation marks. 
+    
     3. Include the .jpg extentions(or what ever type of file you are using, lets say maybe its a .gif or .png). 
-    4. in the alt="..." part of the code add a small note about what the image is (not super important),
+    
+    4. In the alt="..." part of the code add a small note about what the image is (not super important),
     *** BUT, if your images do appear for some reason, this text will appear FYI
     
-    EXAMPLE list of images added: 
-    <img class="project-img" src="1_example_file_name.jpg"          alt="text context for the visually impared">
-    <img class="project-img" src="2_type_your_file_name_here.jpg"  alt="title of work and year maybe">
-    <img class="project-img" src="3_one_more.jpg" alt="picture of apple ... not super important">
+    5. You have the option of including a CAPTION,
+    if you decide you don't need one, 
+    just delete the text that is there -> (INSERT CAPTION HERE).
+
+    6. FOLLOW this pattern for each image.
+    
+    - - - - - - - - - - - 
+    EXAMPLE list of images: 
+
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="1_FILE_NAME.jpg"  alt=" include text for visually impared">
+            <p class="caption-text">INSERT CAPTION HERE</p>
+        </div>
+
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="2_FILE_NAME.jpg"  alt="include text for visually impared">
+            <p class="caption-text">INSERT CAPTION HERE</p>
+        </div>
+
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="#_FLE_NAME.jpg"  alt="include text for visually impared">
+            <p class="caption-text">INSERT CAPTION HERE</p>
+        </div>
     - - - - - - - - - - - 
 
     ADDING VIDEO:
     STEPS:
-    1. Using Handbrake, re-size video as much as possible
+    1. Using Handbrake, re-size video as much as possible for the web
+    
     2. Upload to Vimeo
+    
     3. Copy Vimeo embed snip-it
+    
     4. Paste into your html template like you would add an image. 
-
+    - - - - - - - - - - -     
+    EXAMPLE VIDEO:
+    <iframe src="https://player.vimeo.com/video/465592701" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>   
+    - - - - - - - - - - - 
+    
     ADDING TEXT: 
+    (Titles, Links, Text Blocks)
+    There will be a big example after this explanation:
+
     STEPS:
     1. To add text to your page:
-    *** Your text must always go inside of this text-container. 
-    like this:    
+    *** Your text must always go inside of this text-container
+   
     <div class="text-container">
-        //INSERT TEXT STUFF IN HERE//
+        //->INSERT TEXT CONTENT IN HERE<-//
         <div class="text-spacer"></div>
     </div> 
 
-    2. Text elements for you to use:
-    *TITLE: 
+    2. add text Elements:
+    
+    TITLE: 
     <p class="project-text title">TYPE TITLE HERE</p>
     
-    *LINKS:
+    LINKS:
     <a href="TYPE URL HERE" target="blank">
         <p class="project-text link">TEXT you will SEE/CLICK</p>
     </a>
 
-    *TEXT BLOCK:
+    TEXT BLOCK:
     <p class="project-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Adipisci veritatis optio cumque, inventore sequi pariatur 
@@ -72,27 +112,35 @@
         labore quae minima voluptates ducimus alias. A, iure.
     </p> 
 
-    - need extra space between text elememnts?
-    *ADD LINE:
-    <br>
-
     *** NOTES from Leo ***
     - You can configure these elements in any order you want.
     You could have images first and text last,
     or Images, then text, then Images etc.
     
     -You can have more than one text container.
-    (Think of the text container as a image slide you can add or remove in an image carousel)
+    (Think of the text container as a slide you can add or remove in an image carousel)
 
     - *** IMPORTANT ***
     You'll notice something in the code below that looks like this:
         <div class="scroller-container">
     Everything you add, wether its text or image, MUST GO INSIDE of the scoller container
-
     
-    Example Below: 
-    You can copy paste everything below into you new project html Page :)
+    ~ DONT WORRY ~
+    All of this will make more sense in the template below.
+    I know this llok like a lot, but its just a refrence guide
+    Its gets easier very quickly
+
+    After you're finished plugging in your all your content,
+    You can delete all of the commentted notes  
+    and the extra spacing I added 
+    ~ You can also always look at other project pages for refrence ~
+
+    PANIC? Just holler at me boo!
+
     HERE IS YOUR TEMPLATE 💕
+    COPY PASTE EVERYTHING FROM THE <!DOCTYPE html> down to the end. 
+
+     - * - * - * - * - * - * - * - * - * - * - * 
 -->    
 
 <!DOCTYPE html>
@@ -100,32 +148,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../reset.css">
     <link rel="stylesheet" href="../../../reset.css">
     <link rel="stylesheet" href="../project_page.css">
+
     <!-- 
-    The <title></title> below is where the name of your project 
-    shows up on the tab of your browser. Its important for search engines.
+    The <title></title> below is the text that 
+    appears on the tab of your browser. 
+    Its important for search engines and web crawlers.
     -->
-    <title> The name of your project goes HERE</title>
+    <title>INSERT PROJECT TITLE HERE | Raine Trainor</title>
+
 </head>
 <body>
-    <!--*** IMPORTANT *** ALL TEXT AND IMAGES MUST GO INSIDE THIS scroller-container -->
+
+    <!--*** IMPORTANT *** ALL CONTENT GOES INSIDE THIS scroller-container
+        Its where all your content lives  
+        I've marked the end of this container so its not confusing.
+    -->
     <div class="scroller-container">
+
+
+
         <!-- EXAMPLE START OF A TEXT CONTAINER -->
         <div class="text-container">
-            <!-- PROJECT TITLE EXAMPLE -->
-            <p class="project-text title">Project Title / 2019 / Gallery Name?</p>
 
-            <!-- PROJECT LINK EXAMPLE -->
+            <!-- TITLE EXAMPLE -->
+            <p class="project-text title">Project Title / 1999 / Gallery Name</p>
+
+
+            <!-- LINK EXAMPLE -->
             <a class="project-link" href="https://youtu.be/3y1G3DntX1w" target="blank">
-                <p class="project-text link">This is a Youtube Link, you can edit/ change this text</p>
+                <p class="project-text link">This is a Link, you can edit/ change this text, CLICK ME</p>
             </a>
-            <!--Another PROJECT LINK EXAMPLE (as a PDF) -->
+
+            <!--Another LINK EXAMPLE (as a PDF) -->
             <a class="project-link" href="../some_folder/a_pdf_file.pdf" target="blank">
             <p class="project-text link">This link could also go to a PDF file!</p>
             </a>
-            <!-- PROJECT TEXT BLOCK EXAMPLE -->
-            <p class="project-text"> THIS IS AN EXAMPLE TEXT ....Evelyn Ansel, Bobby Anspach, Daniel Armitano, 
+            <!-- TEXT BLOCK EXAMPLE -->
+            <p class="project-text"> THIS IS AN EXAMPLE TEXT BLOCK .... 
+                HTML files dont care about where you indent.
+                So if you indent HERE:
+                IT WONT APPEAR THAT WAY IN THE BROWSER: You'll see :)
+                IF YOU WANT TO END A LINE us this -> <br>
+                IF YOU NEED A SPACE use it again -> 
+                (this first one ends this line, the second one below, creates a space)<br>
+                <br> 
+                TADA! NEW LINE! <br>
+                <br>
+                - - - 
+                THIS IS JUST RANDOM TEXT NOW-> Evelyn Ansel, Bobby Anspach, Daniel Armitano, 
                 Jon Campolo, Kyla Chevrier, Peter Coffin, Roslyn Fok, 
                 Laura Serejo Genes, Agusta Gudmondsottir, Hugh Hayden, 
                 Leah Hennessy & Emily Allen, Riley Hooker, Miles Huston, Stacy Leigh, 
@@ -134,30 +207,57 @@
                 Ben Mendelwicz, Jenna Rosenberg, John Elio Reitman, Isabelle Simpson, 
                 Kristin Walsh, Ethan Bond Watts, Sarah Zapata
             </p>
-            <!-- PROJECT ADD LINE -->
-            <br>
+
             <!-- TEXT-SPACER -->
             <!-- don't touch, but always include in text-container at the very end -->
             <div class="text-spacer"></div>
         </div>
         <!-- EXAMPLE END OF A TEXT CONTAINER -->  
+
+
          
         <!-- EXAMPLE OF SOME IMAGES ADDED -->
-        <!-- Images Added -->
-        <img class="project-img" src="1_file_name.jpg" alt="add text context here for the visually impared">
-        <img class="project-img" src="2_file_name.jpg" alt="text context for the visually impared">
-        <img class="project-img" src="3_file_name.jpg" alt="text context for the visually impared">
-        <img class="project-img" src="4_file_name.jpg" alt="text context for the visually impared">
-        <img class="project-img" src="5_file_name.jpg" alt="text context for the visually impared">
-         <!--END OF EXAMPLE OF SOME IMAGES ADDED -->
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="1_FILE_NAME.jpg"  alt=" include text for visually impared">
+            <p class="caption-text">INSERT CAPTION HERE or DELETE ME? YOU DECIDE!</p>
+        </div>
 
-         <!-- ADDING VIDEO (copy pasted from Vineo Embbed) -->
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="2_FILE_NAME.jpg"  alt="include text for visually impared">
+            <p class="caption-text">INSERT CAPTION HERE</p>
+        </div>
+
+        <div class="captioned-image-wrapper">
+            <img class="project-img" src="1_FiLE_NAME.jpg"  alt="include text for visually impared">
+            <p class="caption-text"></p>
+        </div>
+         <!--END OF EXAMPLE OF IMAGES ADDED -->
+
+
+
+         <!-- ADDING VIDEO (copy pasted from ViMeo Embbed) -->
          <iframe src="https://player.vimeo.com/video/465592701" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        <!-- DEAD-IMG  -->
-        <!-- ** don't touch, but ALWAYS include in scroller-container at the very end -->
-        <div class="dead-img"></div>
-    </div>
+        
+        
 
+        <!-- DEAD-IMG  -->
+        <!-- ** 
+            You don't need to edit this 
+            but ALWAYS include in scroller-container at the very end.
+            Its just a empty space for the scrolling function
+            Boring ... 
+        -->
+        <div class="dead-img"></div>
+
+
+
+    </div> <!-- 
+        Raine: THIS IS THE END OF THE scroller-container
+        You don't need to add/remove/edit anything past this point :)
+        You did it!
+    -->
+
+    <!-- NO TOUCHIES // this is the Navigation stuff -->
     <!-- Navigation HOME / back to PROJECTS -->
     <div class="nav-grid">
         <a class="art-link nav" href="../../projects.html">
