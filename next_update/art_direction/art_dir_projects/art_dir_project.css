@@ -1,4 +1,164 @@
+@font-face {
+    src: url(../../../fonts/frank/FrankfurterChrD/FrankfurterChrD.ttf);
+    font-family: frank;
+}
 body, html {
     height: 100%;
     width: 100%;
+}
+
+@media screen and (min-width:320px) {
+    /* NAVIGATION LINKS */
+    .nav-text { 
+        font-family: frank;
+        font-size: 25pt;
+        display: block;
+        filter: drop-shadow(-2px 2px 1px #a3ff00);
+        color: #008217;
+    }
+    .nav-grid {
+        position: fixed;
+        bottom: 0em;
+        width: 100vw;
+        height: 15%;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav {
+        width: 100%;
+        align-self: end;
+        text-decoration: none;
+        filter: drop-shadow(0 0px 3px lime);
+    }
+    .art-link {
+        margin-left: 1em;
+    }
+    .home-link {
+        text-align: right;
+        margin-left: -1em;
+    }
+    /* NAV END */
+
+    /* Template Styles  */
+    header {
+        height: 10%;
+        font-family: frank;
+        font-size: 2em;
+        text-align: center;
+    }
+    .scroller-container {
+        /* position: fixed; */
+        height: 50vh;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: min-content;
+        grid-gap: 0.5em;
+        align-items: center;
+        /* border: 1px solid chartreuse; */
+    }
+    .text-container {
+        height: 40vh;
+        width: 85vw;
+        overflow-y: scroll;
+    }
+    .project-text {
+        font-size: 10pt;
+        font-family: helvetica;
+        margin: 0;
+    }    
+    .project-text.title {
+        margin: 1em auto;
+        font-size: 10pt;
+    }
+    .project-text.title:hover {
+        background-color:black;
+        color: white;
+    }
+    .project-link {
+        text-decoration: none;
+        filter: none;
+        color: blue;
+        filter: drop-shadow(0 0 0 black);
+    }
+    .project-text.link:hover {
+        background-color: blue;
+        color: white;
+    }
+    .project-link:visited {
+        color:blue;
+    }
+    .text-spacer {
+        height: 50%;
+    }   
+    .project-img {
+        height: 30vh;
+        /* width: 85vw; */
+        /* align-self: center; */
+        /* margin-top: 5vh; */
+    }
+    .captioned-image-wrapper {
+        display: grid; 
+        /* height: 100vh; */
+        height: fit-content;
+    }
+    .caption-text{
+
+    }
+    .iframe-wrapper {
+        
+    }
+    iframe {
+        height: 44vh;
+        width: 23vw;
+        align-self: baseline;
+    }
+    .dead-img {
+        width: 10em;
+        height: 10em;
+        /* border: 2px solid blue; */
+    }
+}
+@media screen and (min-width:568px) { 
+    .scroller-container {
+        margin: 0;
+        grid-auto-columns: min-content;
+    }
+    .text-container {
+        width: 44vw;
+    }
+    .project-img {
+        width: unset;
+        height: 44vh;
+    }
+}
+
+@media screen and (min-width:700px) { 
+    .nav-text {
+        font-size: 42pt;
+    }
+    .project-text {
+        font-size: 15pt;
+    }
+    .project-text.title {
+        font-size: 16pt;
+    }
+    .scroller-container {
+        /* grid-gap: 2em; */
+    }
+}
+
+@media screen and (min-width:900px) { 
+    .nav-text {
+        font-size: 57pt;
+    }
+}
+
+@media screen and (min-width:1100px) { 
+    .nav-text {
+        font-size: 70pt;
+    }
 }
