@@ -8,13 +8,21 @@ body, html {
 }
 
 .modal {
+    justify-items: center;
+    align-items: center;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    border: 2px solid lime;
+    /* border: 2px solid lime; */
     bottom: 0em;
     background-color: #000000f7;
     display: none;
+}
+.modal-image {
+    display: block;
+    max-width: 99vw;
+    max-height: 99vh;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:320px) {
