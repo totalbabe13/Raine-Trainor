@@ -7,6 +7,16 @@ body, html {
     width: 100%;
 }
 
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid lime;
+    bottom: 0em;
+    background-color: #000000f7;
+    display: none;
+}
+
 @media screen and (min-width:320px) {
     /* NAVIGATION LINKS */
     .left {
@@ -154,6 +164,9 @@ body, html {
 }
 
 @media screen and (min-width:700px) { 
+    .nav-grid {
+        bottom: 5.5em;
+    }
     .nav-text {
         font-size: 42pt;
     }
