@@ -17,22 +17,28 @@ body {
 }
 
 @media screen and (min-width:320px) {
-    header {
-        color: white;
-        font-family: frank;
-        font-size: 35pt;
-        text-align: center;
-    }
+    
     .project-wrapper {
-        height: 40vw;
-        width: 40vw;
-        border: 16px solid #00ff08;
-        display: block;
-        margin: 5em auto;
+       width: fit-content;
+       height: fit-content;
+       display: grid;
+       align-items: center;
+    }
+    a {
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
     
-    .folder-icon {
-        width: 90%;
+    .project-icon {
+        width: 8em;
+    }
+    p {
+        grid-row-start: 1;
+        font-family: frank;
+        color: white;
+        grid-column-start: 1;
+        font-size: 20pt;
+        filter: drop-shadow(0px 0px 1px #ff00cbœœ);
     }
 }
 

@@ -138,6 +138,10 @@ body, html {
         /* height: 100vh; */
         height: fit-content;
     }
+    .work-text {
+        background-color: black;
+        color: white;
+    }
     .credit-text{
         background-color: lime;
         font-style: italic;
