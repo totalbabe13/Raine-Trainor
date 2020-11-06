@@ -98,8 +98,6 @@ body, html {
     .project-text.title {
         margin: 1em 0;
         font-size: 12pt;
-        background-color: black;
-        color: lime;
         width: fit-content;
         text-align: left;
         font-weight: 900;
